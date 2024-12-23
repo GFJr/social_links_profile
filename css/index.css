@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: "Inter", "sans-serif";
+    font-size: 0.8rem;
+    color:white;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    align-items: center;
+    min-height: 100svh;
+    justify-content: center;
+    gap:1.8rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    max-width: 24rem;
+    max-height: 38rem;
+    padding: 1rem;
+    line-height:1.6;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+
+.card img {
+    display: block;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;   /* Makes the image round */
+    object-fit: cover;    /* Ensures the image covers the circular area without distortion */
+    
+}
+
+.name_location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight {
+    color: hsl(75, 94%, 57%);
+}
+
+.links {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+}
+
+.link {
+    background-color: hsl(0, 0%, 20%);
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    align-content: center;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.link:hover {
+    background-color:hsl(75, 94%, 57%);
+    cursor: pointer;
+}
+
+.link:hover a {
+    color: black;
+}
